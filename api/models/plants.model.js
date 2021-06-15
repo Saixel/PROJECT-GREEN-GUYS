@@ -8,28 +8,21 @@ const plantSchema = new mongoose.Schema({
   type: {
     type: String,
     enum: ['consumo', 'ornamental'],
-    default: 'consumo',
-    required: [true, 'Type is required']
+    default: 'consumo'
   },
-  recommendedSown: {
-    type: Array,
-    required: [true, 'Name is required']
-  },
-
+  recommendedSown: [{
+    type: Number,
+    required: [true, 'Recommended sown is required']
+  }],
   typeSown: {
     type: String,
-    enum: ['Directa', 'De asiento', 'En semillero', '34 semillas por golpe'],
-    required: [true, 'Type sown is required']
-
+    enum: ['Directa', 'De asiento', 'En semillero', '34 semillas por golpe']
   },
   germination: {
     type: Number,
     required: [true, 'Name is required']
-
   },
-  repotting: {
-    type: [String, Number]
-  },
+  repotting: [String, Number],
   capacity: {
     type: Number,
     required: [true, 'Capacity is required']
@@ -39,23 +32,24 @@ const plantSchema = new mongoose.Schema({
     required: [true, 'Irrigation is required']
   },
   distanceRequired: {
-    type: Number,
-    required: [true, 'Distance is required']
+    type: Number
   },
   betweenPlants: {
-    type: Number,
-    required: [true, 'Distance is required']
+    type: Number
   },
   plantingDepth: {
-    type: Number,
-    required: [true, 'Depth is required']
+    type: Number
   },
-  beneficial: {
-    type: [String]
-  },
-  harmful: {
-    type: [String]
-  }
+  beneficial: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'plants'
+  }],
+  harmful: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'plants'
+  }]
 })
 
-exports.PlantModel = mongoose.model('plants', plantSchema)
+const PlantModel = mongoose.model('plants', plantSchema)
+
+module.exports = { plantSchema, PlantModel }

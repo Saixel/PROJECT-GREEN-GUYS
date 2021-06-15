@@ -34,3 +34,38 @@ exports.deleteUser = (req, res) => {
     .then((result) => res.status(200).json(result))
     .catch((err) => res.json(err))
 }
+
+exports.addFavourite = (req, res) => {
+  UserModel
+    .findById(req.params.userId)
+    .then(user => {
+      console.log('User: ', user)
+      user.favourites.push(req.params.plantId)
+      user.save(err => {
+        if (err) return console.error('Error: ', err)
+        res.json(user)
+      })
+    })
+    .catch((err) => res.json(err))
+}
+
+exports.getFavourites = (req, res) => {
+  UserModel
+    .findById(req.params.userId)
+    .populate('favourites')
+    .then(user => res.json(user.favourites))
+    .catch(err => res.json(err))
+}
+
+exports.deleteFavourite = (req, res) => {
+  UserModel
+    .findById(req.params.userId)
+    .then(user => {
+      user.favourites.remove(req.params.plantId)
+      user.save(err => {
+        if (err) return console.error('Error: ', err)
+        res.json(user)
+      })
+    })
+    .catch((err) => res.json(err))
+}

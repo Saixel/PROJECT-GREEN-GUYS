@@ -20,23 +20,27 @@ exports.getPlant = (req, res) => {
     .then((plant) => res.status(200).json(plant))
     .catch((err) => res.status(500).json(err))
 }
+
 // exports.getBeneficialPlants = (req, res) => {
 //   PlantModel
 //     .findById(req.params.plantId)
 //     .then((plant) => res.status(200).json(plant))
 //     .catch((err) => res.status(500).json(err))
 // }
+//
 // exports.getHarmfulPlants = (req, res) => {
 //   PlantModel
 //     .findById(req.params.plantId)
 //     .then((plant) => res.status(200).json(plant))
 //     .catch((err) => res.status(500).json(err))
 // }
+//
 // exports.getPlantsByMonth = (req, res) => {
 //   PlantModel
 //     .findById(req.params.plantId)
 //     .then((plant) => res.status(200).json(plant))
 //     .catch((err) => res.status(500).json(err))
+
 exports.updatePlant = (req, res) => {
   PlantModel
     .findByIdAndUpdate(req.params.plantId, req.body)
@@ -46,7 +50,7 @@ exports.updatePlant = (req, res) => {
 
 exports.deletePlant = (req, res) => {
   PlantModel
-    .findByIdAndDelete(req.params.id)
+    .findByIdAndDelete(req.params.plantId)
     .then((result) => res.status(200).json(result))
     .catch((err) => res.status(500).json(err))
 }

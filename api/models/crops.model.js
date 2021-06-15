@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 
-// const { PotModel } = require('../models/users.model')
-// const { CropModel } = require('../models/users.model')
+const { plantSchema } = require('../models/plants.model')
 
 const cropSchema = new mongoose.Schema({
   name: {
@@ -15,43 +14,31 @@ const cropSchema = new mongoose.Schema({
     required: [true, 'Size of the crop is required']
   },
   numberSectors: {
-    type: Number
+    type: Number,
+    required: [true, 'Number of sectors is required']
   },
-  sectors: [
-    {
-      rows: {
-        plants: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: 'plants',
-          required: [true, 'The plant is required']
-        },
-        irrigation: {
-          type: Number
-        },
-        lastIrrigation: {
-          type: String
-        },
-        nextIrrigation: {
-          type: String
-        },
-        fertilizer: {
-          type: String
-        },
-        lastFertilized: {
-          type: String
-        },
-        nextFertilized: {
-          type: String
-        },
-        sown: {
-          type: String
-        },
-        harvest: {
-          type: String
-        }
+  sectors: [{
+    rows: {
+      plants: [plantSchema],
+      irrigation: {
+        type: Number
+      },
+      lastIrrigation: {
+        type: String
+      },
+      nextIrrigation: {
+        type: String
+      },
+      sown: {
+        type: String
+      },
+      harvest: {
+        type: String
       }
     }
-  ]
+  }]
 })
 
-exports.CropModel = mongoose.model('crops', cropSchema)
+const CropModel = mongoose.model('crops', cropSchema)
+
+module.exports = { cropSchema, CropModel }

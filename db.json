@@ -1,0 +1,578 @@
+[
+  {
+    "name": "Acelga",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 4,
+    "typeSown": "Directa",
+    "germination": 12,
+    "repotting": "Aclarar en 12cm",
+    "capacity": 22,
+    "irrigation": 2,
+    "distanceRequired": 50,
+    "betweenPlants": 20,
+    "plantingDepth": 5,
+    "beneficial": [
+      "ajo",
+      "berenjena",
+      "brócoli",
+      "cebollas",
+      "col",
+      "coliflor",
+      "judías",
+      "lechuga",
+      "pimiento",
+      "rábanos",
+      "repollo",
+      "tomates",
+      "zanahoria"
+    ],
+    "harmful": [
+      "Remolacha"
+    ]
+  },
+  {
+    "name": "Ajo",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "harvest": 4,
+    "typeSown": "De asiento",
+    "germination": "12",
+    "repotting": "No necesita",
+    "capacity": 3,
+    "irrigation": 15,
+    "distanceRequired": 30,
+    "betweenPlants": 10,
+    "plantingDepth": 3,
+    "beneficial": [
+      "acelga",
+      "berenjena",
+      "chirivia",
+      "fresa",
+      "lechuga",
+      "pepino",
+      "pimiento",
+      "remolacha",
+      "tomates",
+      "zanahorias"
+    ],
+    "harmful": [
+      "brocoli",
+      "cebollas",
+      "cebollino",
+      "col",
+      "coliflor",
+      "colinabo",
+      "guisantes",
+      "habas",
+      "judias",
+      "puerro",
+      "repollo"
+    ]
+  },
+  {
+    "Name": "Albahaca",
+    "type": "consumo",
+    "recommendedSown": [
+      3,
+      4,
+      5
+    ],
+    "harvest": 1,
+    "typeSown": "Directa",
+    "germination": 20,
+    "repotting": "No necesita",
+    "capacity": 5,
+    "irrigation": 3,
+    "distanceRequired": 30,
+    "betweenPlants": 30,
+    "plantingDepth": 2,
+    "beneficial": [
+      "berenjena",
+      "pimiento",
+      "tomates"
+    ]
+  },
+  {
+    "Name": "Alcachofa",
+    "type": "consumo",
+    "recommendedSown": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "harvest": 12,
+    "typeSown": "En semillero",
+    "germination": 15,
+    "repotting": 10,
+    "capacity": 30,
+    "irrigation": 2,
+    "distanceRequired": 60,
+    "betweenPlants": 3,
+    "plantingDepth": 3,
+    "beneficial": [
+      "apio",
+      "lechuga",
+      "pepino"
+    ],
+    "harmful": [
+      "papas"
+    ]
+  },
+  {
+    "Name": "Apio",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 8,
+    "typeSown": "En semillero",
+    "germination": 18,
+    "repotting": 10,
+    "capacity": 9,
+    "irrigation": 2,
+    "distanceRequired": 30,
+    "betweenPlants": 30,
+    "plantingDepth": 5,
+    "beneficial": [
+      "alcachofa",
+      "berenjena",
+      "brocoli",
+      "col",
+      "coliflor",
+      "colinabo",
+      "guisantes",
+      "judias",
+      "lechuga",
+      "pepino",
+      "pimiento",
+      "puerro",
+      "repollo",
+      "tomates"
+    ],
+    "harmful": [
+      "papas",
+      "zanahoria"
+    ]
+  },
+  {
+    "Name": "Berenjena",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      12
+    ],
+    "harvest": "5",
+    "typeSown": "En semillero",
+    "germination": 20,
+    "repotting": 12,
+    "capacity": 13,
+    "irrigation": 2,
+    "distanceRequired": 100,
+    "betweenPlants": 50,
+    "plantingDepth": 5,
+    "beneficial": [
+      "acelga",
+      "ajo",
+      "albahaca",
+      "apio",
+      "brocoli",
+      "cebollas",
+      "col",
+      "coliflor",
+      "espinacas",
+      "judias",
+      "lechuga",
+      "perejil",
+      "pimiento",
+      "puerro",
+      "rabanos",
+      "repollo",
+      "rúcula"
+    ],
+    "harmful": [
+      "guisantes",
+      "hinojo",
+      "pepino"
+    ]
+  },
+  {
+    "Name": "Brócoli",
+    "type": "consumo",
+    "recommendedSown": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "harvest": 6,
+    "typeSown": "En semillero",
+    "germination": 8,
+    "repotting": 12,
+    "capacity": 18,
+    "irrigation": 2,
+    "distanceRequired": 60,
+    "betweenPlants": 30,
+    "beneficial": [
+      "acelga",
+      "apio",
+      "berenjena",
+      "coliflor",
+      "espinacas",
+      "guisantes",
+      "judias",
+      "lechuga",
+      "pepino",
+      "pimiento",
+      "puerro",
+      "rabanos",
+      "repollo",
+      "rucula"
+    ],
+    "harmful": [
+      "ajo",
+      "cebollas",
+      "papa"
+    ]
+  },
+  {
+    "Name": "Calabacín",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "harvest": 3,
+    "typeSown": "34 semillas por golpe",
+    "germination": 9,
+    "repotting": "Aclarar en 15 cmdealtura",
+    "capacity": 22,
+    "irrigation": 3,
+    "distanceRequired": 100,
+    "betweenPlants": 60,
+    "plantingDepth": 2,
+    "beneficial": [
+      "lechuga",
+      "maiz",
+      "cebollas",
+      "rabano",
+      "rucula"
+    ],
+    "harmful": [
+      "pepino",
+      "hinojo"
+    ]
+  },
+  {
+    "Name": "Calabaza",
+    "type": "consumo",
+    "recommendedSown": [
+      3,
+      4,
+      5
+    ],
+    "harvest": 5,
+    "typeSown": "34 semillas por golpe",
+    "germination": 12,
+    "repotting": "Aclarar en 15 cm de altura",
+    "capacity": 20,
+    "irrigation": 3,
+    "distanceRequired": 200,
+    "betweenPlants": 100,
+    "plantingDepth": 5,
+    "beneficial": [
+      "maiz",
+      "judias"
+    ]
+  },
+  {
+    "Name": "Canónigo",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "harvest": 2,
+    "typeSown": "Directa",
+    "germination": 9,
+    "repotting": "No necesita",
+    "capacity": 5,
+    "irrigation": 2,
+    "distanceRequired": 10,
+    "betweenPlants": 5,
+    "plantingDepth": 2,
+    "beneficial": [
+      "col",
+      "colinabo",
+      "puerro",
+      "zanahorias"
+    ]
+  },
+  {
+    "Name": "Cebollas",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 5,
+    "typeSown": "En semillero",
+    "germination": 11,
+    "repotting": "Grosor como un lápiz",
+    "capacity": 5,
+    "irrigation": 15,
+    "distanceRequired": 25,
+    "betweenPlants": 10,
+    "plantingDepth": 3,
+    "beneficial": [
+      "acelga",
+      "berenjena",
+      "calabacin",
+      "espinacas",
+      "lechuga",
+      "pepino",
+      "pimiento",
+      "remolacha",
+      "tomates",
+      "zanahoria"
+    ],
+    "harmful": [
+      "ajo",
+      "brocoli",
+      "cebollino",
+      "col",
+      "coliflor",
+      "puerro",
+      "judia",
+      "habas",
+      "guisantes",
+      "puerro",
+      "repollo"
+    ]
+  },
+  {
+    "Name": "Cebollino",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 2,
+    "typeSown": "Directa",
+    "germination": 15,
+    "repotting": "No necesita",
+    "capacity": 3,
+    "irrigation": 2,
+    "distanceRequired": 20,
+    "betweenPlants": 3,
+    "plantingDepth": 1,
+    "beneficial": [
+      "perejil",
+      "zanahoria"
+    ],
+    "harmful": [
+      "ajo",
+      "cebollas",
+      "puerro"
+    ]
+  },
+  {
+    "Name": "Col",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "harvest": 6,
+    "typeSown": "En semillero",
+    "germination": 8,
+    "repotting": "Con 3- 4 hojas",
+    "capacity": 22,
+    "irrigation": 2,
+    "distanceRequired": 60,
+    "betweenPlants": 30,
+    "plantingDepth": 1,
+    "beneficial": [
+      "acelga",
+      "apio",
+      "berenjenas",
+      "canonigos",
+      "espinacas",
+      "guisantes",
+      "judias",
+      "lechugas",
+      "maiz",
+      "pepino",
+      "pimiento",
+      "puerro",
+      "remolacha",
+      "tomates"
+    ],
+    "harmful": [
+      "ajos",
+      "colinabos",
+      "fresas",
+      "cebollas",
+      "rabanos",
+      "rucula",
+      "papas"
+    ]
+  },
+  {
+    "Name": "Coliflor",
+    "type": "consumo",
+    "recommendedSown": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "harvest": 7,
+    "typeSown": "En semillero",
+    "germination": 8,
+    "repotting": 20,
+    "capacity": 22,
+    "irrigation": 2,
+    "distanceRequired": 60,
+    "betweenPlants": 40,
+    "plantingDepth": 3,
+    "beneficial": [
+      "acelga",
+      "apio",
+      "berenjena",
+      "brocoli",
+      "espinacas",
+      "guisantes",
+      "judias",
+      "lechuga",
+      "pepino",
+      "puerro",
+      "tomates"
+    ],
+    "harmful": [
+      "ajo",
+      "cebollas",
+      "fresa",
+      "papas",
+      "rabanos",
+      "rucula"
+    ]
+  },
+  {
+    "Name": "Espinacas",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 3,
+    "typeSown": "Directa ",
+    "germination": 11,
+    "repotting": "No necesita",
+    "capacity": 3,
+    "irrigation": 2,
+    "distanceRequired": 20,
+    "betweenPlants": 12,
+    "plantingDepth": 7,
+    "compatible": [
+      "berenjena",
+      "brocoli",
+      "cebollas",
+      "col",
+      "coliflor",
+      "colinabo",
+      "fresa",
+      "habas",
+      "judias",
+      "maiz",
+      "melon",
+      "papas",
+      "pimiento",
+      "rabanos",
+      "repollo",
+      "tomates"
+    ],
+    "incompatible": [
+      "acelga",
+      "remolacha"
+    ]
+  }
+]

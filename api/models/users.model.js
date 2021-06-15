@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-// const { PotModel } = require('../models/users.model')
-// const { CropModel } = require('../models/users.model')
+const { potSchema } = require('../models/pots.model')
+const { cropSchema } = require('../models/crops.model')
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
   },
   email: {
     type: String,
+    unique: true,
     required: [true, 'Email is required']
   },
   password: {
@@ -24,9 +25,9 @@ const userSchema = new mongoose.Schema({
   favourites: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'plants'
-  }]
-  // pots: [potSchema],
-  // crops: [cropSchema]
+  }],
+  pots: [potSchema],
+  crops: [cropSchema]
 })
 
 exports.UserModel = mongoose.model('users', userSchema)

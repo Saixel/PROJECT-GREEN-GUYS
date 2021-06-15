@@ -1,12 +1,14 @@
 const mongoose = require('mongoose')
 
+const { plantSchema } = require('../models/plants.model')
+
 const potSchema = new mongoose.Schema({
   name: {
     type: String
   },
   totalCapacity: {
     type: Number,
-    required: [true, 'Capacity us required']
+    required: [true, 'Capacity is required']
   },
   leftCapacity: {
     type: Number
@@ -23,23 +25,9 @@ const potSchema = new mongoose.Schema({
   nextIrrigation: {
     type: String
   },
-  fertilizer: {
-    type: String
-  },
-  lastFertilized: {
-    type: String
-  },
-  nextFertilized: {
-    type: String
-  },
-  plants: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'plants'
-    }
-  ]
-  // pots: [potSchema],
-  // crops: [cropSchema]
+  plants: [plantSchema]
 })
 
-exports.PotModel = mongoose.model('pots', potSchema)
+const PotModel = mongoose.model('pots', potSchema)
+
+module.exports = { potSchema, PotModel }
