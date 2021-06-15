@@ -30,7 +30,7 @@ exports.updateUser = (req, res) => {
 
 exports.deleteUser = (req, res) => {
   UserModel
-    .findByIdAndDelete(req.params.id)
+    .findByIdAndDelete(req.params.userId)
     .then((result) => res.status(200).json(result))
     .catch((err) => res.json(err))
 }
