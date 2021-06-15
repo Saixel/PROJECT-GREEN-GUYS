@@ -21,25 +21,17 @@ exports.getPlant = (req, res) => {
     .catch((err) => res.status(500).json(err))
 }
 
-// exports.getBeneficialPlants = (req, res) => {
-//   PlantModel
-//     .findById(req.params.plantId)
-//     .then((plant) => res.status(200).json(plant))
-//     .catch((err) => res.status(500).json(err))
-// }
-//
-// exports.getHarmfulPlants = (req, res) => {
-//   PlantModel
-//     .findById(req.params.plantId)
-//     .then((plant) => res.status(200).json(plant))
-//     .catch((err) => res.status(500).json(err))
-// }
-//
-// exports.getPlantsByMonth = (req, res) => {
-//   PlantModel
-//     .findById(req.params.plantId)
-//     .then((plant) => res.status(200).json(plant))
-//     .catch((err) => res.status(500).json(err))
+exports.getBeneficialPlants = (req, res) => {
+
+}
+
+exports.getHarmfulPlants = (req, res) => {
+
+}
+
+exports.getPlantsByMonth = (req, res) => {
+
+}
 
 exports.updatePlant = (req, res) => {
   PlantModel
