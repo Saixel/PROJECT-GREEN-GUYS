@@ -21,16 +21,50 @@ exports.getPlant = (req, res) => {
     .catch((err) => res.status(500).json(err))
 }
 
-exports.getBeneficialPlants = (req, res) => {
+// exports.getBeneficialPlants = (req, res) => {
+//   PlantModel
+//     .find()
+//     .then(plants => {
+//       const SOWN = plants.filter(plant => plant.beneficial.includes(req.params.plantId))
+//       res.status(200).json(SOWN.map(plant => plant.name))
+//     })
+//     .catch((err) => res.status(500).json(err))
+// }
 
+exports.getBeneficialPlants = (req, res) => {
+  PlantModel
+    .findById(req.params.plantId)
+    .populate('beneficial')
+    .then(plant => res.status(200).json(plant.beneficial.map(plant => plant.name)))
+    .catch((err) => res.status(500).json(err))
 }
 
-exports.getHarmfulPlants = (req, res) => {
+// exports.getHarmfulPlants = (req, res) => {
+//   PlantModel
+//     .find()
+//     .then(plants => {
+//       const SOWN = plants.filter(plant => plant.harmful.includes(req.params.plantId))
+//       res.status(200).json(SOWN.map(plant => plant.name))
+//     })
+//     .catch((err) => res.status(500).json(err))
+// }
 
+exports.getHarmfulPlants = (req, res) => {
+  PlantModel
+    .findById(req.params.plantId)
+    .populate('harmful')
+    .then(plant => res.status(200).json(plant.harmful.map(plant => plant.name)))
+    .catch((err) => res.status(500).json(err))
 }
 
 exports.getPlantsByMonth = (req, res) => {
-
+  PlantModel
+    .find()
+    .then(plants => {
+      const SOWN = plants.filter(plant => plant.recommendedSown.includes(req.params.month))
+      res.status(200).json(SOWN.map(plant => plant.name))
+    })
+    .catch((err) => res.status(500).json(err))
 }
 
 exports.updatePlant = (req, res) => {

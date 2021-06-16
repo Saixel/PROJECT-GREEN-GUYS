@@ -28,6 +28,10 @@ exports.updateUser = (req, res) => {
     .catch((err) => res.status(500).json(err))
 }
 
+exports.updateProfile = (req, res) => {
+
+}
+
 exports.deleteUser = (req, res) => {
   UserModel
     .findByIdAndDelete(req.params.userId)

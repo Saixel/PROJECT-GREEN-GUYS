@@ -1,5 +1,8 @@
 [
   {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d2"
+    },
     "name": "Acelga",
     "type": "consumo",
     "recommendedSown": [
@@ -22,29 +25,58 @@
     "repotting": "Aclarar en 12cm",
     "capacity": 22,
     "irrigation": 2,
-    "distanceRequired": 50,
-    "betweenPlants": 20,
+    "distanceRows": 50,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 20,
     "plantingDepth": 5,
     "beneficial": [
-      "ajo",
-      "berenjena",
-      "brócoli",
-      "cebollas",
-      "col",
-      "coliflor",
-      "judías",
-      "lechuga",
-      "pimiento",
-      "rábanos",
-      "repollo",
-      "tomates",
-      "zanahoria"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
     ],
     "harmful": [
-      "Remolacha"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      }
     ]
   },
   {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d3"
+    },
     "name": "Ajo",
     "type": "consumo",
     "recommendedSown": [
@@ -65,37 +97,80 @@
     "repotting": "No necesita",
     "capacity": 3,
     "irrigation": 15,
-    "distanceRequired": 30,
-    "betweenPlants": 10,
+    "distanceRows": 30,
+    "distanceOthersPlants": 5,
+    "distancebBetweenPlants": 10,
     "plantingDepth": 3,
     "beneficial": [
-      "acelga",
-      "berenjena",
-      "chirivia",
-      "fresa",
-      "lechuga",
-      "pepino",
-      "pimiento",
-      "remolacha",
-      "tomates",
-      "zanahorias"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
     ],
     "harmful": [
-      "brocoli",
-      "cebollas",
-      "cebollino",
-      "col",
-      "coliflor",
-      "colinabo",
-      "guisantes",
-      "habas",
-      "judias",
-      "puerro",
-      "repollo"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dd"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      }
     ]
   },
   {
-    "Name": "Albahaca",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d4"
+    },
+    "name": "Albahaca",
     "type": "consumo",
     "recommendedSown": [
       3,
@@ -108,17 +183,28 @@
     "repotting": "No necesita",
     "capacity": 5,
     "irrigation": 3,
-    "distanceRequired": 30,
-    "betweenPlants": 30,
+    "distanceRows": 30,
+    "distanceOthersPlants": 10,
+    "distancebBetweenPlants": 30,
     "plantingDepth": 2,
     "beneficial": [
-      "berenjena",
-      "pimiento",
-      "tomates"
-    ]
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": []
   },
   {
-    "Name": "Alcachofa",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d5"
+    },
+    "name": "Alcachofa",
     "type": "consumo",
     "recommendedSown": [
       3,
@@ -129,23 +215,35 @@
     "harvest": 12,
     "typeSown": "En semillero",
     "germination": 15,
-    "repotting": 10,
+    "repotting": "10cm",
     "capacity": 30,
     "irrigation": 2,
-    "distanceRequired": 60,
-    "betweenPlants": 3,
+    "distanceRows": 60,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 3,
     "plantingDepth": 3,
     "beneficial": [
-      "apio",
-      "lechuga",
-      "pepino"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
     ],
     "harmful": [
-      "papas"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      }
     ]
   },
   {
-    "Name": "Apio",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d6"
+    },
+    "name": "Apio",
     "type": "consumo",
     "recommendedSown": [
       1,
@@ -162,35 +260,68 @@
     "harvest": 8,
     "typeSown": "En semillero",
     "germination": 18,
-    "repotting": 10,
+    "repotting": "10cm",
     "capacity": 9,
     "irrigation": 2,
-    "distanceRequired": 30,
-    "betweenPlants": 30,
+    "distanceRows": 30,
+    "distanceOthersPlants": 10,
+    "distancebBetweenPlants": 30,
     "plantingDepth": 5,
     "beneficial": [
-      "alcachofa",
-      "berenjena",
-      "brocoli",
-      "col",
-      "coliflor",
-      "colinabo",
-      "guisantes",
-      "judias",
-      "lechuga",
-      "pepino",
-      "pimiento",
-      "puerro",
-      "repollo",
-      "tomates"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
     ],
     "harmful": [
-      "papas",
-      "zanahoria"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
     ]
   },
   {
-    "Name": "Berenjena",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d7"
+    },
+    "name": "Berenjena",
     "type": "consumo",
     "recommendedSown": [
       1,
@@ -202,39 +333,77 @@
     "harvest": "5",
     "typeSown": "En semillero",
     "germination": 20,
-    "repotting": 12,
+    "repotting": "12cm",
     "capacity": 13,
     "irrigation": 2,
-    "distanceRequired": 100,
-    "betweenPlants": 50,
+    "distanceRows": 80,
+    "distanceOthersPlants": 50,
+    "distancebBetweenPlants": 50,
     "plantingDepth": 5,
     "beneficial": [
-      "acelga",
-      "ajo",
-      "albahaca",
-      "apio",
-      "brocoli",
-      "cebollas",
-      "col",
-      "coliflor",
-      "espinacas",
-      "judias",
-      "lechuga",
-      "perejil",
-      "pimiento",
-      "puerro",
-      "rabanos",
-      "repollo",
-      "rúcula"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      }
     ],
     "harmful": [
-      "guisantes",
-      "hinojo",
-      "pepino"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
     ]
   },
   {
-    "Name": "Brócoli",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d8"
+    },
+    "name": "Brócoli",
     "type": "consumo",
     "recommendedSown": [
       5,
@@ -245,35 +414,70 @@
     "harvest": 6,
     "typeSown": "En semillero",
     "germination": 8,
-    "repotting": 12,
+    "repotting": "12cm",
     "capacity": 18,
     "irrigation": 2,
-    "distanceRequired": 60,
-    "betweenPlants": 30,
+    "distanceRows": 60,
+    "distanceOthersPlants": 50,
+    "distancebBetweenPlants": 30,
     "beneficial": [
-      "acelga",
-      "apio",
-      "berenjena",
-      "coliflor",
-      "espinacas",
-      "guisantes",
-      "judias",
-      "lechuga",
-      "pepino",
-      "pimiento",
-      "puerro",
-      "rabanos",
-      "repollo",
-      "rucula"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
     ],
     "harmful": [
-      "ajo",
-      "cebollas",
-      "papa"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      }
     ]
   },
   {
-    "Name": "Calabacín",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2d9"
+    },
+    "name": "Calabacín",
     "type": "consumo",
     "recommendedSown": [
       2,
@@ -285,26 +489,44 @@
     "harvest": 3,
     "typeSown": "34 semillas por golpe",
     "germination": 9,
-    "repotting": "Aclarar en 15 cmdealtura",
+    "repotting": "Aclarar en 15 cm de altura",
     "capacity": 22,
     "irrigation": 3,
-    "distanceRequired": 100,
-    "betweenPlants": 60,
+    "distanceRows": 100,
+    "distanceOthersPlants": 25,
+    "distancebBetweenPlants": 60,
     "plantingDepth": 2,
     "beneficial": [
-      "lechuga",
-      "maiz",
-      "cebollas",
-      "rabano",
-      "rucula"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
     ],
     "harmful": [
-      "pepino",
-      "hinojo"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
     ]
   },
   {
-    "Name": "Calabaza",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2da"
+    },
+    "name": "Calabaza",
     "type": "consumo",
     "recommendedSown": [
       3,
@@ -317,16 +539,25 @@
     "repotting": "Aclarar en 15 cm de altura",
     "capacity": 20,
     "irrigation": 3,
-    "distanceRequired": 200,
-    "betweenPlants": 100,
+    "distanceRows": 200,
+    "distanceOthersPlants": 75,
+    "distancebBetweenPlants": 100,
     "plantingDepth": 5,
     "beneficial": [
-      "maiz",
-      "judias"
-    ]
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      }
+    ],
+    "harmful": []
   },
   {
-    "Name": "Canónigo",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2db"
+    },
+    "name": "Canónigo",
     "type": "consumo",
     "recommendedSown": [
       1,
@@ -346,18 +577,31 @@
     "repotting": "No necesita",
     "capacity": 5,
     "irrigation": 2,
-    "distanceRequired": 10,
-    "betweenPlants": 5,
+    "distanceRows": 10,
+    "distanceOthersPlants": 15,
+    "distancebBetweenPlants": 5,
     "plantingDepth": 2,
     "beneficial": [
-      "col",
-      "colinabo",
-      "puerro",
-      "zanahorias"
-    ]
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": []
   },
   {
-    "Name": "Cebollas",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2dc"
+    },
+    "name": "Cebollas",
     "type": "consumo",
     "recommendedSown": [
       1,
@@ -377,37 +621,77 @@
     "repotting": "Grosor como un lápiz",
     "capacity": 5,
     "irrigation": 15,
-    "distanceRequired": 25,
-    "betweenPlants": 10,
+    "distanceRows": 25,
+    "distanceOthersPlants": 7,
+    "distancebBetweenPlants": 10,
     "plantingDepth": 3,
     "beneficial": [
-      "acelga",
-      "berenjena",
-      "calabacin",
-      "espinacas",
-      "lechuga",
-      "pepino",
-      "pimiento",
-      "remolacha",
-      "tomates",
-      "zanahoria"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
     ],
     "harmful": [
-      "ajo",
-      "brocoli",
-      "cebollino",
-      "col",
-      "coliflor",
-      "puerro",
-      "judia",
-      "habas",
-      "guisantes",
-      "puerro",
-      "repollo"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dd"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      }
     ]
   },
   {
-    "Name": "Cebollino",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2dd"
+    },
+    "name": "Cebollino",
     "type": "consumo",
     "recommendedSown": [
       1,
@@ -426,21 +710,35 @@
     "repotting": "No necesita",
     "capacity": 3,
     "irrigation": 2,
-    "distanceRequired": 20,
-    "betweenPlants": 3,
+    "distanceRows": 20,
+    "distanceOthersPlants": 5,
+    "distancebBetweenPlants": 3,
     "plantingDepth": 1,
     "beneficial": [
-      "perejil",
-      "zanahoria"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
     ],
     "harmful": [
-      "ajo",
-      "cebollas",
-      "puerro"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      }
     ]
   },
   {
-    "Name": "Col",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2de"
+    },
+    "name": "Col",
     "type": "consumo",
     "recommendedSown": [
       2,
@@ -454,40 +752,86 @@
     "harvest": 6,
     "typeSown": "En semillero",
     "germination": 8,
-    "repotting": "Con 3- 4 hojas",
+    "repotting": "Con 3 - 4 hojas",
     "capacity": 22,
     "irrigation": 2,
-    "distanceRequired": 60,
-    "betweenPlants": 30,
+    "distanceRows": 60,
+    "distanceOthersPlants": 40,
+    "distancebBetweenPlants": 30,
     "plantingDepth": 1,
     "beneficial": [
-      "acelga",
-      "apio",
-      "berenjenas",
-      "canonigos",
-      "espinacas",
-      "guisantes",
-      "judias",
-      "lechugas",
-      "maiz",
-      "pepino",
-      "pimiento",
-      "puerro",
-      "remolacha",
-      "tomates"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2db"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
     ],
     "harmful": [
-      "ajos",
-      "colinabos",
-      "fresas",
-      "cebollas",
-      "rabanos",
-      "rucula",
-      "papas"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
     ]
   },
   {
-    "Name": "Coliflor",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2df"
+    },
+    "name": "Coliflor",
     "type": "consumo",
     "recommendedSown": [
       5,
@@ -498,36 +842,74 @@
     "harvest": 7,
     "typeSown": "En semillero",
     "germination": 8,
-    "repotting": 20,
+    "repotting": "20cm",
     "capacity": 22,
     "irrigation": 2,
-    "distanceRequired": 60,
-    "betweenPlants": 40,
+    "distanceRows": 60,
+    "distanceOthersPlants": 50,
+    "distancebBetweenPlants": 40,
     "plantingDepth": 3,
     "beneficial": [
-      "acelga",
-      "apio",
-      "berenjena",
-      "brocoli",
-      "espinacas",
-      "guisantes",
-      "judias",
-      "lechuga",
-      "pepino",
-      "puerro",
-      "tomates"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
     ],
     "harmful": [
-      "ajo",
-      "cebollas",
-      "fresa",
-      "papas",
-      "rabanos",
-      "rucula"
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
     ]
   },
   {
-    "Name": "Espinacas",
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e0"
+    },
+    "name": "Espinacas",
     "type": "consumo",
     "recommendedSown": [
       1,
@@ -544,35 +926,1479 @@
       12
     ],
     "harvest": 3,
-    "typeSown": "Directa ",
+    "typeSown": "Directa",
     "germination": 11,
     "repotting": "No necesita",
     "capacity": 3,
     "irrigation": 2,
-    "distanceRequired": 20,
-    "betweenPlants": 12,
+    "distanceRows": 20,
+    "distanceOthersPlants": 7,
+    "distancebBetweenPlants": 12,
     "plantingDepth": 7,
-    "compatible": [
-      "berenjena",
-      "brocoli",
-      "cebollas",
-      "col",
-      "coliflor",
-      "colinabo",
-      "fresa",
-      "habas",
-      "judias",
-      "maiz",
-      "melon",
-      "papas",
-      "pimiento",
-      "rabanos",
-      "repollo",
-      "tomates"
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
     ],
-    "incompatible": [
-      "acelga",
-      "remolacha"
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e1"
+    },
+    "name": "Fresa",
+    "type": "consumo",
+    "recommendedSown": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "harvest": 7,
+    "typeSown": "Ensemillero",
+    "germination": 17,
+    "repotting": "8cm",
+    "capacity": 5,
+    "irrigation": 1,
+    "distanceRows": 50,
+    "distanceOthersPlants": 15,
+    "distancebBetweenPlants": 30,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e2"
+    },
+    "name": "Guisantes",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 5,
+    "typeSown": "Directa",
+    "germination": 11,
+    "repotting": "No necesita",
+    "capacity": 5,
+    "irrigation": 3,
+    "distanceRows": 40,
+    "distanceOthersPlants": 15,
+    "distancebBetweenPlants": 10,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e3"
+    },
+    "name": "Habas",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 5,
+    "typeSown": "Directa ogolpes 2-4semillas",
+    "germination": 11,
+    "repotting": "No necesita",
+    "capacity": 10,
+    "irrigation": 2,
+    "distanceRows": 40,
+    "distanceOthersPlants": 15,
+    "distancebBetweenPlants": 15,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e4"
+    },
+    "name": "Hinojo",
+    "type": "consumo",
+    "recommendedSown": [
+      4,
+      5,
+      6
+    ],
+    "harvest": 4,
+    "typeSown": "Asiento de 3- 4 semillas",
+    "germination": 17,
+    "repotting": "Se dejará la más fuerte",
+    "capacity": 8,
+    "irrigation": 2,
+    "distanceRows": 30,
+    "distanceOthersPlants": 25,
+    "distancebBetweenPlants": 20,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e5"
+    },
+    "name": "Judías",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "harvest": 3,
+    "typeSown": "Asiento de 2- 3 semillas",
+    "germination": 9,
+    "repotting": "No necesita",
+    "capacity": 14,
+    "irrigation": 2,
+    "distanceRows": 40,
+    "distanceOthersPlants": 25,
+    "distancebBetweenPlants": 25,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e6"
+    },
+    "name": "Lechuga",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 3,
+    "typeSown": "En semillero",
+    "germination": 7,
+    "repotting": "8cm o 4 - 5 hojas",
+    "capacity": 3,
+    "irrigation": 2,
+    "distanceRows": 30,
+    "distanceOthersPlants": 7,
+    "distancebBetweenPlants": 20,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e7"
+    },
+    "name": "Maíz",
+    "type": "consumo",
+    "recommendedSown": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "harvest": 5,
+    "typeSown": "A golpes",
+    "germination": 8,
+    "repotting": "No necesita",
+    "capacity": 9,
+    "irrigation": 3,
+    "distanceRows": 70,
+    "distanceOthersPlants": 18,
+    "distancebBetweenPlants": 25,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2da"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
+    ],
+    "harmful": []
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e8"
+    },
+    "name": "Melón",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "harvest": 3,
+    "typeSown": "Directa",
+    "germination": 11,
+    "repotting": "No necesita",
+    "capacity": 28,
+    "irrigation": 3,
+    "distanceRows": 100,
+    "distanceOthersPlants": 25,
+    "distancebBetweenPlants": 50,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2e9"
+    },
+    "name": "colinabo",
+    "type": "consumo",
+    "recommendedSown": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "harvest": 3,
+    "typeSown": "De asiento",
+    "germination": 7,
+    "repotting": "3cm",
+    "capacity": 6,
+    "irrigation": 3,
+    "distanceRows": 45,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 10,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2ea"
+    },
+    "name": "Papa",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "harvest": 4,
+    "typeSown": "Directa",
+    "repotting": "No necesita",
+    "capacity": 10,
+    "irrigation": 4,
+    "distanceRows": 20,
+    "distanceOthersPlants": 40,
+    "distancebBetweenPlants": 10,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2db"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2eb"
+    },
+    "name": "Pepino",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "harvest": 2,
+    "typeSown": "Directa",
+    "germination": 9,
+    "repotting": "No necesita",
+    "capacity": 15,
+    "irrigation": 7,
+    "distanceRows": 100,
+    "distanceOthersPlants": 50,
+    "distancebBetweenPlants": 50,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2ec"
+    },
+    "name": "Perejil",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 3,
+    "typeSown": "Directa",
+    "germination": 17,
+    "repotting": "No necesita",
+    "capacity": 5,
+    "irrigation": 2,
+    "distanceRows": 20,
+    "distanceOthersPlants": 7,
+    "distancebBetweenPlants": 5,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dd"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2ed"
+    },
+    "name": "Pimiento",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      12
+    ],
+    "harvest": 6,
+    "typeSown": "En semillero",
+    "germination": 17,
+    "repotting": "Con 3 - 4 hojas",
+    "capacity": 14,
+    "irrigation": 3,
+    "distanceRows": 20,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 30,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2ee"
+    },
+    "name": "Puerro",
+    "type": "consumo",
+    "recommendedSown": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "harvest": 7,
+    "typeSown": "Directa",
+    "germination": 13,
+    "repotting": "No necesita",
+    "capacity": 5,
+    "irrigation": 2,
+    "distanceRows": 20,
+    "distanceOthersPlants": 10,
+    "distancebBetweenPlants": 13,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2ef"
+    },
+    "name": "Rabanos",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 1,
+    "typeSown": "Directa",
+    "germination": 7,
+    "repotting": "Aclarado en 8cm",
+    "capacity": 2,
+    "irrigation": 2,
+    "distanceRows": 4,
+    "distanceOthersPlants": 5,
+    "distancebBetweenPlants": 8,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2f0"
+    },
+    "name": "Remolacha",
+    "type": "consumo",
+    "recommendedSown": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "harvest": 4,
+    "typeSown": "Directa, a voleo en lineas",
+    "germination": 11,
+    "repotting": "Aclarado en 20cm",
+    "capacity": 5,
+    "irrigation": 2,
+    "distanceRows": 25,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 20,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": []
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2f1"
+    },
+    "name": "Rúcula",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "harvest": 2,
+    "typeSown": "Directa",
+    "germination": 9,
+    "repotting": "No necesita",
+    "capacity": 3,
+    "irrigation": 2,
+    "distanceRows": 30,
+    "distanceOthersPlants": 8,
+    "distancebBetweenPlants": 15,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d7"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2f2"
+    },
+    "name": "Sandía",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "harvest": 5,
+    "typeSown": "Directa o en semillero",
+    "germination": 11,
+    "repotting": "Con 3 - 4 hojas",
+    "capacity": 30,
+    "irrigation": 1,
+    "distanceRows": 20,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 50,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e7"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2f3"
+    },
+    "name": "Tomates",
+    "type": "consumo",
+    "recommendedSown": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "harvest": 5,
+    "typeSown": "En semillero",
+    "germination": 9,
+    "repotting": "Con 3 - 4 hojas",
+    "capacity": 18,
+    "irrigation": 2,
+    "distanceRows": 20,
+    "distanceOthersPlants": 20,
+    "distancebBetweenPlants": 30,
+    "plantingDepth": 2,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2de"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2df"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e5"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e9"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ed"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f1"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f4"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e8"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ea"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "60c9b9f8a6ecf9233076b2f4"
+    },
+    "name": "Zanahoria",
+    "type": "consumo",
+    "recommendedSown": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "harvest": 4,
+    "typeSown": "Directa",
+    "germination": 14,
+    "repotting": "No necesita",
+    "capacity": 3,
+    "irrigation": 3,
+    "distanceRows": 15,
+    "distanceOthersPlants": 5,
+    "distancebBetweenPlants": 5,
+    "plantingDepth": 1,
+    "beneficial": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d3"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2db"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dc"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2dd"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e2"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2eb"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ee"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ef"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f0"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2f3"
+      }
+    ],
+    "harmful": [
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2d6"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2e4"
+      },
+      {
+        "$oid": "60c9b9f8a6ecf9233076b2ec"
+      }
     ]
   }
 ]

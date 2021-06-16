@@ -10,8 +10,13 @@ const userSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    unique: true,
-    required: [true, 'Email is required']
+    required: [true, 'Email is required'],
+    validate: {
+      validator (value) {
+        return /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(value)
+      }
+    },
+    unique: [true, 'This email is registered']
   },
   password: {
     type: String,
@@ -20,6 +25,7 @@ const userSchema = new mongoose.Schema({
   role: {
     type: String,
     enum: ['member', 'seller', 'admin'],
+    required: false,
     default: 'member'
   },
   favourites: [{

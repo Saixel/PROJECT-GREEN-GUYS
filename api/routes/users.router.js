@@ -1,11 +1,13 @@
 const userRouter = require('express').Router()
 
+const { checkAdmin } = require('../controllers/auth.controller')
+
 const {
   createUser,
   getAllUsers,
   getUser,
   updateUser,
-  // updateProfile,
+  updateProfile,
   deleteUser,
   addFavourite,
   getFavourites,
@@ -34,12 +36,12 @@ const {
 
 userRouter
   // USERS CONTROLERS
-  .post('/', createUser)
-  .get('/', getAllUsers)
-  .get('/:userId', getUser)
-  .put('/:userId', updateUser)
-  // .put('/me', updateProfile)
-  .delete('/:userId', deleteUser)
+  .post('/', checkAdmin, createUser)
+  .get('/', checkAdmin, getAllUsers)
+  .get('/:userId', checkAdmin, getUser)
+  .put('/:userId', checkAdmin, updateUser)
+  .put('/me', updateProfile)
+  .delete('/:userId', checkAdmin, deleteUser)
   // FAVOURITES CONTROLERS
   .post('/:userId/favourites/:plantId', addFavourite)
   .get('/:userId/favourites', getFavourites)

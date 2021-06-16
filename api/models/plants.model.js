@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const plantSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, 'Name is required']
+    required: [true, 'Plant name is required']
   },
   type: {
     type: String,
@@ -14,15 +14,16 @@ const plantSchema = new mongoose.Schema({
     type: Number,
     required: [true, 'Recommended sown is required']
   }],
+  harvest: {
+    type: Number,
+    required: [true, 'Harvest is required']
+  },
   typeSown: {
     type: String,
     enum: ['Directa', 'De asiento', 'En semillero', '34 semillas por golpe']
   },
-  germination: {
-    type: Number,
-    required: [true, 'Name is required']
-  },
-  repotting: [String, Number],
+  germination: Number,
+  repotting: String,
   capacity: {
     type: Number,
     required: [true, 'Capacity is required']
@@ -31,15 +32,10 @@ const plantSchema = new mongoose.Schema({
     type: Number,
     required: [true, 'Irrigation is required']
   },
-  distanceRequired: {
-    type: Number
-  },
-  betweenPlants: {
-    type: Number
-  },
-  plantingDepth: {
-    type: Number
-  },
+  distanceRows: Number,
+  distanceOthersPlants: Number,
+  distancebBetweenPlants: Number,
+  plantingDepth: Number,
   beneficial: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'plants'
