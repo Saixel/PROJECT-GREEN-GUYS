@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const plantSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, 'Plant name is required']
+    required: [true, 'Plant name is required'],
+    unique: [true, 'The plant already exists']
   },
   type: {
     type: String,

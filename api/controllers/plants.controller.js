@@ -31,14 +31,6 @@ exports.getPlant = (req, res) => {
 //     .catch((err) => res.status(500).json(err))
 // }
 
-exports.getBeneficialPlants = (req, res) => {
-  PlantModel
-    .findById(req.params.plantId)
-    .populate('beneficial')
-    .then(plant => res.status(200).json(plant.beneficial.map(plant => plant.name)))
-    .catch((err) => res.status(500).json(err))
-}
-
 // exports.getHarmfulPlants = (req, res) => {
 //   PlantModel
 //     .find()
@@ -48,6 +40,14 @@ exports.getBeneficialPlants = (req, res) => {
 //     })
 //     .catch((err) => res.status(500).json(err))
 // }
+
+exports.getBeneficialPlants = (req, res) => {
+  PlantModel
+    .findById(req.params.plantId)
+    .populate('beneficial')
+    .then(plant => res.status(200).json(plant.beneficial.map(plant => plant.name)))
+    .catch((err) => res.status(500).json(err))
+}
 
 exports.getHarmfulPlants = (req, res) => {
   PlantModel

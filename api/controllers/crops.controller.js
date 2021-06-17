@@ -17,10 +17,6 @@ exports.getCrop = (req, res) => {
 
 }
 
-exports.updateCrop = (req, res) => {
-
-}
-
 exports.deleteCrop = (req, res) => {
 
 }

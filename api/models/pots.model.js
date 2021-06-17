@@ -25,7 +25,10 @@ const potSchema = new mongoose.Schema({
   nextIrrigation: {
     type: String
   },
-  plants: [plantSchema]
+  plants: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'plants'
+  }]
 })
 
 const PotModel = mongoose.model('pots', potSchema)
