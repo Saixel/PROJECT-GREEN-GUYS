@@ -1,5 +1,3 @@
-// const { PotModel } = require('../models/pots.model')
-// const { PlantModel } = require('../models/plants.model')
 const { UserModel } = require('../models/users.model')
 
 exports.createPot = (req, res) => {
@@ -9,7 +7,12 @@ exports.createPot = (req, res) => {
       user.pots.push(req.body.pots)
       user.save(err => {
         if (err) return console.error('Error: ', err)
-        res.status(200).json(user)
+        res.status(200).json({
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          pots: user.pots
+        })
       })
     })
     .catch((err) => res.status(500).json(err))
@@ -23,7 +26,12 @@ exports.addPlantPot = (req, res) => {
       pot.plants.push(req.params.plantId)
       user.save(err => {
         if (err) return console.error('Error: ', err)
-        res.status(200).json(user)
+        res.status(200).json({
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          pots: user.pots
+        })
       })
     })
     .catch((err) => res.status(500).json(err))
@@ -50,7 +58,12 @@ exports.deletePot = (req, res) => {
       user.pots.remove(user.pots.id(req.params.potId))
       user.save(err => {
         if (err) return console.error('Error: ', err)
-        res.status(200).json(user)
+        res.status(200).json({
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          pots: user.pots
+        })
       })
     })
     .catch((err) => res.status(500).json(err))
@@ -64,7 +77,12 @@ exports.deletePlantPot = (req, res) => {
       pot.plants.remove(req.params.plantId)
       user.save(err => {
         if (err) return console.error('Error: ', err)
-        res.status(200).json(user)
+        res.status(200).json({
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          pots: user.pots
+        })
       })
     })
     .catch((err) => res.status(500).json(err))

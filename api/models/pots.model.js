@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-
-const { plantSchema } = require('../models/plants.model')
+// const { plantSchema } = require('../models/plants.model')
 
 const potSchema = new mongoose.Schema({
   name: {

@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-
-const { plantSchema } = require('../models/plants.model')
+// const { plantSchema } = require('../models/plants.model')
 
 const cropSchema = new mongoose.Schema({
   name: {
@@ -19,7 +18,10 @@ const cropSchema = new mongoose.Schema({
   },
   sectors: [{
     rows: {
-      plants: [plantSchema],
+      plants: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'plants'
+      }],
       irrigation: {
         type: Number
       },

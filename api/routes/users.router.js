@@ -40,10 +40,12 @@ userRouter
   .put('/:userId', checkAdmin, updateUser)
   .put('/me', updateProfile)
   .delete('/:userId', checkAdmin, deleteUser)
+
   // FAVOURITES CONTROLERS
   .post('/:userId/favourites/:plantId', addFavourite)
   .get('/:userId/favourites', getFavourites)
   .delete('/:userId/favourites/:plantId', deleteFavourite)
+
   // POTS CONTROLERS
   .post('/:userId/pots', createPot)
   .post('/:userId/pots/:potId/:plantId', addPlantPot)
@@ -51,6 +53,7 @@ userRouter
   .get('/:userId/pots/:potId', getPot)
   .delete('/:userId/pots/:potId', deletePot)
   .delete('/:userId/pots/:potId/plants/:plantId', deletePlantPot)
+
   // CROPS CONTROLERS
   .post('/:userId/crops', createCrop)
   .post('/:userId/crops/:cropId/:plantId', addPlantCrop)

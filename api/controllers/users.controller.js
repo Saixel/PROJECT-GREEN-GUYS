@@ -3,28 +3,53 @@ const { UserModel } = require('../models/users.model')
 exports.createUser = (req, res) => {
   UserModel
     .create(req.body)
-    .then((user) => res.status(200).json(user))
+    .then((user) => res.status(200).json({
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role
+    }))
     .catch((err) => res.status(500).json(err))
 }
 
 exports.getAllUsers = (req, res) => {
   UserModel
     .find()
-    .then((users) => res.status(200).json(users))
+    .then((users) => {
+      res.status(200).json(users.map(function (user) {
+        return { id: user._id, name: user.name, email: user.email, role: user.role }
+      }))
+    })
     .catch((err) => res.status(500).json(err))
 }
 
 exports.getUser = (req, res) => {
   UserModel
     .findById(req.params.userId)
-    .then((user) => res.status(200).json(user))
+    .then((user) => res.status(200).json({
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+      favourites: user.favourites,
+      pots: user.pots,
+      crops: user.crops
+    }))
     .catch((err) => res.status(500).json(err))
 }
 
 exports.updateUser = (req, res) => {
   UserModel
     .findByIdAndUpdate(req.params.userId, req.body)
-    .then((result) => res.status(200).json(result))
+    .then((user) => res.status(200).json({
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+      favourites: user.favourites,
+      pots: user.pots,
+      crops: user.crops
+    }))
     .catch((err) => res.status(500).json(err))
 }
 
@@ -47,7 +72,15 @@ exports.addFavourite = (req, res) => {
       user.favourites.push(req.params.plantId)
       user.save(err => {
         if (err) return console.error('Error: ', err)
-        res.status(200).json(user)
+        res.status(200).json({
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          role: user.role,
+          favourites: user.favourites,
+          pots: user.pots,
+          crops: user.crops
+        })
       })
     })
     .catch((err) => res.status(500).json(err))
@@ -57,7 +90,7 @@ exports.getFavourites = (req, res) => {
   UserModel
     .findById(req.params.userId)
     .populate('favourites')
-    .then(user => res.status(200).json(user.favourites))
+    .then(user => res.status(200).json(user.favourites.map(plant => plant.name)))
     .catch(err => res.status(500).json(err))
 }
 
@@ -68,7 +101,15 @@ exports.deleteFavourite = (req, res) => {
       user.favourites.remove(req.params.plantId)
       user.save(err => {
         if (err) return console.error('Error: ', err)
-        res.status(200).json(user)
+        res.status(200).json({
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          role: user.role,
+          favourites: user.favourites,
+          pots: user.pots,
+          crops: user.crops
+        })
       })
     })
     .catch((err) => res.status(500).json(err))

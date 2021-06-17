@@ -21,26 +21,6 @@ exports.getPlant = (req, res) => {
     .catch((err) => res.status(500).json(err))
 }
 
-// exports.getBeneficialPlants = (req, res) => {
-//   PlantModel
-//     .find()
-//     .then(plants => {
-//       const SOWN = plants.filter(plant => plant.beneficial.includes(req.params.plantId))
-//       res.status(200).json(SOWN.map(plant => plant.name))
-//     })
-//     .catch((err) => res.status(500).json(err))
-// }
-
-// exports.getHarmfulPlants = (req, res) => {
-//   PlantModel
-//     .find()
-//     .then(plants => {
-//       const SOWN = plants.filter(plant => plant.harmful.includes(req.params.plantId))
-//       res.status(200).json(SOWN.map(plant => plant.name))
-//     })
-//     .catch((err) => res.status(500).json(err))
-// }
-
 exports.getBeneficialPlants = (req, res) => {
   PlantModel
     .findById(req.params.plantId)
@@ -80,3 +60,23 @@ exports.deletePlant = (req, res) => {
     .then((result) => res.status(200).json(result))
     .catch((err) => res.status(500).json(err))
 }
+
+// exports.getBeneficialPlants = (req, res) => {
+//   PlantModel
+//     .find()
+//     .then(plants => {
+//       const SOWN = plants.filter(plant => plant.beneficial.includes(req.params.plantId))
+//       res.status(200).json(SOWN.map(plant => plant.name))
+//     })
+//     .catch((err) => res.status(500).json(err))
+// }
+
+// exports.getHarmfulPlants = (req, res) => {
+//   PlantModel
+//     .find()
+//     .then(plants => {
+//       const SOWN = plants.filter(plant => plant.harmful.includes(req.params.plantId))
+//       res.status(200).json(SOWN.map(plant => plant.name))
+//     })
+//     .catch((err) => res.status(500).json(err))
+// }
