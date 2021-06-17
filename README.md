@@ -1,7 +1,7 @@
 
-# GREEN GUYS 
+# GREEN BOYS 
 
-Green guys is our api (data base) created to help people to plant their own crops offering all the necessary information. 
+Green Boys is our api (data base) created to help people to plant their own crops offering all the necessary information. 
 
 - Amazing data base!
 - Recommended Sown
@@ -72,3 +72,118 @@ Actually Green Guys is developed to be a Back-end project for the moment, so it'
 |POST     |/users/:userId/favourites/:plantId           |Yes    |User                |Add a plant to favourites      |-   | Object added   |
 |GET    |/users/:userId/favourites        |Yes    |User           |Get all your favourites      |-   | Array of ObjectId   |
 |DELETE    |/users/:userId/favourites/:plantId |Yes   |User        |Delete a favourite plant      |-   | Deleted object   |
+
+# Sign up (POST)
+```
+/auth/signup
+```
+Example:
+```json
+{
+    "name": "Agoney Laposte",
+    "password": "platanocongofio",
+    "email": "Agoney@guanchemail.com",
+    
+}
+```
+## Login (POST)
+```
+/auth/login
+```
+```json
+{
+    "email": "Agoney@guanchemail.com",
+    "password": "platanocongofio"
+}
+```
+## Profile
+### GET your profile
+```
+/profile
+```
+
+### Update your profile (PUT)
+```
+/profile
+```
+Example:
+```json
+{
+    "phone": 123456789
+}
+```
+
+## Publications
+
+### GET all publications
+```
+/publications
+```
+### POST a publication
+```
+/publications
+```
+Example:
+```json
+{
+    "title": "Test publication",
+    "description": "This is a test publication"
+}
+```
+### Update a publication (PUT)
+```
+/publications/:publication
+```
+Example:
+```json
+{
+    "title": "This is a EDITED publication",
+    "description": "This publication was edited"
+}
+```
+### DELETE a publication
+```
+/publications/:publication
+```
+## Comments
+### GET all comments
+```
+/publications/:publication/comments
+```
+### POST a comment
+```
+/publications/:publication/comments
+```
+Example:
+```json
+{
+    "description": "This is a test comment",
+    "rate": 4
+}
+```
+### DELETE a comment
+```
+/publications/:publication/:comment
+```
+# Usage
+
+As every Social Media, you're going to have a Profile with a follow/follower system, a Timeline to be always wondered by the publications and comments of your followed users, an Explore site to watch new publications of random people and Groups, to make great communities to support you in case of any doubt you would have.
+
+# Roadmap
+
+We would like to implement the following ideas in the future:
+* Fully functional Groups.
+* Private user profiles and groups.
+* A Business profile.
+* An awesome and colorful Front-end
+
+# Authors
+
+This project was created and developed by:
+- [Jorge Ruiz Cabrera](https://github.com/milinagi)
+- [Alexis Guanche Ramírez](https://github.com/Saixel)
+- [Daniel saavedra Gemmerli](https://github.com/logandsg)
+
+# License
+
+MIT License.
