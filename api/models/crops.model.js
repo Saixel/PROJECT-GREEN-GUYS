@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 // const { plantSchema } = require('../models/plants.model')
 
+// CROPS MODEL
 const cropSchema = new mongoose.Schema({
   name: {
     type: String

@@ -1,5 +1,6 @@
 const { UserModel } = require('../models/users.model')
 
+// USERS CONTROLLERS
 exports.createUser = (req, res) => {
   UserModel
     .create(req.body)

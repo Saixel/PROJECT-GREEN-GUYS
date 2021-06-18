@@ -1,5 +1,6 @@
 const { PlantModel } = require('../models/plants.model')
 
+// PLANTS CONTROLLERS
 exports.createPlant = (req, res) => {
   PlantModel
     .create(req.body)

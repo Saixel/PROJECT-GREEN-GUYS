@@ -2,6 +2,7 @@ const { UserModel } = require('../models/users.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 
+// AUTH CONTROLLERS
 exports.signup = (req, res) => {
   const hashedPwd = bcrypt.hashSync(req.body.password, 10)
   UserModel
@@ -12,7 +13,6 @@ exports.signup = (req, res) => {
     })
     .then((user) => {
       const userData = { name: user.name, email: user.email }
-
       const token = jwt.sign(
         userData,
         process.env.SECRET,
@@ -30,11 +30,8 @@ exports.login = (req, res) => {
       if (!user) return res.json({ error: 'Wrong email' })
 
       bcrypt.compare(req.body.password, user.password, (err, result) => {
-        if (!result) {
-          return res.json(err, { error: `Wrong password for ${req.body.email}` })
-        }
+        if (!result) { return res.json(err, { error: `Wrong password for ${req.body.email}` }) }
         const userData = { name: user.name, email: user.email }
-
         const token = jwt.sign(
           userData,
           process.env.SECRET,
@@ -61,9 +58,7 @@ exports.checkAuth = (req, res, next) => {
         if (user) {
           res.locals.user = user
           next()
-        } else {
-          res.json({ err: 'Token not valid' })
-        }
+        } else { res.json({ err: 'Token not valid' }) }
       })
   })
 }
@@ -78,9 +73,7 @@ exports.checkAdmin = (req, res, next) => {
         if (user.role === 'admin') {
           res.locals.user = user
           next()
-        } else {
-          res.json({ err: 'Admin permissions are needed' })
-        }
+        } else { res.json({ err: 'Admin permissions are needed' }) }
       })
   })
 }

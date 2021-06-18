@@ -1,6 +1,7 @@
 const { UserModel } = require('../models/users.model')
 const { PlantModel } = require('../models/plants.model')
 
+// POTS CONTROLLERS
 exports.createPot = (req, res) => {
   UserModel
     .findById(req.params.userId)
@@ -35,20 +36,20 @@ exports.addPlantPot = (req, res) => {
             for (let i = 0; i < plant.harmful.length; i++) {
               if (pot.plants.includes(plant.harmful[i])) {
                 res.status(200).json('Plants not compatible')
-              } else {
-                pot.plants.push(req.params.plantId)
-                pot.leftCapacity -= plant.capacity
-                user.save(err => {
-                  if (err) return console.error('Error: ', err)
-                  res.status(200).json({
-                    id: user._id,
-                    name: user.name,
-                    email: user.email,
-                    pots: user.pots
-                  })
-                })
+                return
               }
             }
+            pot.plants.push(req.params.plantId)
+            pot.leftCapacity -= plant.capacity
+            user.save(err => {
+              if (err) return console.error('Error: ', err)
+              res.status(200).json({
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                pots: user.pots
+              })
+            })
           } else { res.status(200).json('Not enough capacity') }
         })
     })

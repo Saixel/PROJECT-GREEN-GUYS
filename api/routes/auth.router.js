@@ -3,8 +3,8 @@ const authRouter = require('express').Router()
 const {
   signup,
   login,
-  whoami,
-  checkAuth
+  checkAuth,
+  whoami
 } = require('../controllers/auth.controller')
 
 authRouter

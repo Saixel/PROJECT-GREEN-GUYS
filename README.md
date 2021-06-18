@@ -1,12 +1,11 @@
+# GREEN BOYS
 
-# GREEN BOYS 
-
-Green Boys is our api (data base) created to help people to plant their own crops offering all the necessary information. 
+Green Boys is our api (data base) created to help people to plant their own crops offering all the necessary information.
 
 - Amazing data base!
 - Recommended Sown
 - List of beneficial and harmful plants
-- And more ... 
+- And more ...
 
 # Installation
 
@@ -19,7 +18,7 @@ Actually Green Guys is developed to be a Back-end project for the moment, so it'
 ## EndPoints
 
 ### - USERS -
-|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                | 
+|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                |
 | :----: | --------------- | :---: | -----------------------------------| :-------: |--------------------- | --------------------- |
 |POST     |/users           |Yes    |Admin                |Create the user      |userSchema   | Object created   |
 |GET    |/users        |Yes    |Admin           |Get all the users      |-   | Array of users   |
@@ -28,14 +27,14 @@ Actually Green Guys is developed to be a Back-end project for the moment, so it'
 |DELETE    |/users/:userId  |Yes    |Admin        |Delete the user      |-   | Deleted object   |
 
 ### - AUTHENTIFICATION -
-|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                | 
+|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                |
 | :----: | --------------- | :---: | -----------------------------------| :-------: |--------------------- | --------------------- |
 |GET     |/whoami           |Yes    |User                |Show your user profile      |-   | Object (user)   |
 |POST    |/singup        |NO    |User           |Create a new user      |userSchema   | Object created   |
 |POST    |/login |YES    |User        |Connect to your user account       |email, password   | Connection confirmation   |
 
 ### - PLANTS -
-|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                | 
+|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                |
 | :----: | --------------- | :---: | -----------------------------------| :-------: |--------------------- | --------------------- |
 |POST     |/plants           |Yes    |Admin                |Add a plant to the database      |plantSchema   | Created object   |
 |GET    |/plants        |No    |All           |Show the entire database      |-   | Array of plants   |
@@ -47,7 +46,7 @@ Actually Green Guys is developed to be a Back-end project for the moment, so it'
 |DELETE    |/plants/:plantId  |Yes    |Admin        |Delete a specific plant      |-   | Deleted object   |
 
 ### - POTS -
-|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                | 
+|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                |
 | :----: | --------------- | :---: | -----------------------------------| :-------: |--------------------- | --------------------- |
 |POST     |/users/:userId/pots           |Yes    |User                |Create a new pot      |potSchema   | Object created   |
 |POST    |/users/:userId/pots/:potId/:plantId        |Yes    |User           |Add a new plant to the pot      |-   | Object plant added   |
@@ -57,7 +56,7 @@ Actually Green Guys is developed to be a Back-end project for the moment, so it'
 |DELETE|/users/:userId/pots/:potId/plants/:plantId  |Yes|User|Delete the plant from the pot|- |Deleted object   |
 
 ### - CROPS -
-|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                | 
+|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                |
 | :----: | --------------- | :---: | -----------------------------------| :-------: |--------------------- | --------------------- |
 |POST     |/users/:userId/crops           |Yes    |User                |Create a new crop      |potSchema   | Object created   |
 |POST    |/users/:userId/crops/:cropId/:plantId        |Yes    |User           |Add a new plant to the crop      |-   | Object plant added   |
@@ -67,7 +66,7 @@ Actually Green Guys is developed to be a Back-end project for the moment, so it'
 |DELETE|/users/:userId/crops/:cropId/plants/:plantId  |Yes|User|Delete the plant from the crop|- |Deleted object   |
 
 ### - FAVOURITES -
-|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                | 
+|METHOD  |ENDPOINT         |TOKEN  |ROLE                         |DESCRIPTION    |POST BODY                | RETURNS                |
 | :----: | --------------- | :---: | -----------------------------------| :-------: |--------------------- | --------------------- |
 |POST     |/users/:userId/favourites/:plantId           |Yes    |User                |Add a plant to favourites      |-   | Object added   |
 |GET    |/users/:userId/favourites        |Yes    |User           |Get all your favourites      |-   | Array of ObjectId   |
@@ -83,7 +82,7 @@ Example:
     "name": "Agoney Laposte",
     "password": "platanocongofio",
     "email": "Agoney@guanchemail.com",
-    
+
 }
 ```
 ## Login (POST)

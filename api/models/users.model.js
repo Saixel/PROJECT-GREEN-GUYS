@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const { potSchema } = require('../models/pots.model')
 const { cropSchema } = require('../models/crops.model')
 
+// USERS MODEL
 const userSchema = new mongoose.Schema({
   name: {
     type: String,

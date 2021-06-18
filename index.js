@@ -30,7 +30,7 @@ api
           if (err) { throw new Error(err) }
           console.info('Connected to Mongo Database \n')
           console.info('>'.repeat(40))
-          console.info('   PROJECT GREEN POWER')
+          console.info('   PROJECT GREEN BOYS')
           console.info(`   PORT: http://localhost:${process.env.PORT}`)
           console.info('>'.repeat(40) + '\n')
         })
