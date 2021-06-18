@@ -36,8 +36,8 @@ exports.addPlantPot = (req, res) => {
               if (pot.plants.includes(plant.harmful[i])) {
                 res.status(200).json('Plants not compatible')
               } else {
-                pot.leftCapacity -= plant.capacity
                 pot.plants.push(req.params.plantId)
+                pot.leftCapacity -= plant.capacity
                 user.save(err => {
                   if (err) return console.error('Error: ', err)
                   res.status(200).json({
@@ -49,9 +49,7 @@ exports.addPlantPot = (req, res) => {
                 })
               }
             }
-          } else {
-            res.status(200).json('Not enough capacity')
-          }
+          } else { res.status(200).json('Not enough capacity') }
         })
     })
     .catch((err) => res.status(500).json(err))
